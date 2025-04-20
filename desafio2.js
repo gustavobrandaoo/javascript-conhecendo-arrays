@@ -21,3 +21,29 @@ const frutas = ['Maçã', 'Banana', 'Laranja', 'Limão', 'Abacaxi'];
 
 frutas.splice(2, 2, 'Kiwi', 'Pêssego');
 console.log(frutas);
+
+
+//Desafio 4
+const menuPrincipal = ['Filé com fritas', 'Lasanha', 'Risoto de cogumelos', 'Frango grelhado'];
+const menuDeSobremesas = ['Pudim', 'Sorvete', 'Torta de limão', 'Brownie'];
+
+const menuCompleto = menuPrincipal.concat(menuDeSobremesas);
+console.log(menuCompleto);
+
+
+//Desafio 5
+const matriz = [];
+let numero = 10;
+
+for (let i = 0; i < 3; i++) {
+    const linha = [];
+
+    for (let j = 0; j < 3; j++) {
+        linha.push(numero);
+        numero++;
+    }
+
+    matriz.push(linha);
+}
+
+console.log(matriz);

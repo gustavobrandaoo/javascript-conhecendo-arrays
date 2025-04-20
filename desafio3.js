@@ -32,3 +32,24 @@ function somaDeNumeros (valores) {
 
 const novosValores = [5, 10, 15];
 somaDeNumeros(lista);
+
+
+//Desafio 4
+function numerosInt (valores) { 
+    let maior = valores[0];
+    let menor = valores[0];
+
+    for(i = 1; i < valores.length; i++) {
+        if (valores[i] > maior) {
+            maior = valores[i];
+        }
+        if (valores[i] < menor) {
+            menor = valores[i];
+        }
+    }
+
+    return ` menor número é ${maior} e o maior número é ${menor}`
+}
+
+const lista = [8, 3, 15, 1, 22, 9];
+console.log(numerosInt(lista));

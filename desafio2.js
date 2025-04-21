@@ -31,7 +31,7 @@ const menuCompleto = menuPrincipal.concat(menuDeSobremesas);
 console.log(menuCompleto);
 
 
-//Desafio 5:Crie uma lista bidimensional com 3 linhas e 3 colunas, onde cada elemento seja uma matriz 3x3 com valores iniciando em 1 e aumentando em 1 a cada elemento.
+//Desafio 5: Crie uma lista bidimensional com 3 linhas e 3 colunas, onde cada elemento seja uma matriz 3x3 com valores iniciando em 1 e aumentando em 1 a cada elemento.
 const matriz = [];
 let numero = 10;
 

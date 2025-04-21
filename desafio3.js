@@ -73,3 +73,16 @@ console.log(numerosPares(numeros));
 
 
 //Desafio 6: Crie um programa que calcule a média dos números presentes em um array utilizando um loop for.
+function calcularMedia(valores) {
+    let soma = 0;
+    
+    for(let i = 0; i < valores.length; i++) {
+        soma += valores[i];
+    }
+    
+    let media = soma / valores.length;
+    return media;
+}
+
+const numeros = [10, 20, 30, 40, 50];
+console.log(calcularMedia(numeros));

@@ -5,16 +5,25 @@ const estudante = {
     turma: 'JavaScript',
     bolsista: true,
     telfones: ['11999999999','11999999980'],
+    endereco: [{
+        rua: 'Rua Joseph Climber',
+        numero: '45',
+        complemento: 'apto 43'
+    }]
 }
 
-estudante.endereco = {
-    rua: 'Rua Joseph Climber',
-    numero: '45',
-    complemento: 'apto 43'
-}
+estudante.endereco.push({
+    rua: 'Saraiva Rodovia',
+    numero: '1340',
+    complemento: ''
+})
 
-console.log(estudante);
+//console.log(estudante.endereco);
+//console.log(estudante.endereco[0]);
 
-// Pesquisar apenas a rua.
 
-console.log(estudante.endereco.rua);
+//Endereço com preenchimento, verdadeiro.
+const listaEnderecosComComplemento = estudante.endereco.filter((endereco) => endereco.complemento)
+
+
+console.log(listaEnderecosComComplemento);

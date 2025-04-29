@@ -28,3 +28,25 @@ const idadePublicacao = anoAtual - novoLivro.anoPublicacao;
  const mostrarDetalhes = `O Pequeno Príncipe é uma obra clássica escrita por Antoine de Saint-Exupéry, publicada originalmente em 1943. A história conta a jornada de um pequeno príncipe que viaja por diferentes planetas, refletindo sobre temas como amizade, amor e a essência da vida de forma delicada e poética. Apesar de ser considerado um livro infantil, suas mensagens profundas conquistam leitores de todas as idades, encantando gerações há mais de ${idadePublicacao} anos.`
 
 console.log(mostrarDetalhes);
+
+
+
+
+const livro3 = {
+    titulo: 'O Pequeno Príncipe',
+    autor: ' Antoine Saint',
+    anoPublicacao: 1943,
+    genero: 'Fantasia',
+    avaliacao: null,
+}
+
+const novaAvaliacao = 4.9;
+
+if (livro3.avaliacao === null) {
+    livro3.avaliacao = novaAvaliacao;
+    console.log(`Avaliação adicionada com sucesso: ${livro3.avaliacao}`);
+} else {
+    console.log("O livro já possui uma avaliação.");
+};
+
+console.log(livro3);

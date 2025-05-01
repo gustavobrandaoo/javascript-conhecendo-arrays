@@ -16,3 +16,18 @@ const estudante = {
       complemento: null
     }]
   }
+
+  function exibirTelefones(telefone1, telefone2) {      //exibir os dois primeiros telefones.
+    console.log(`ligar para ${telefone1}`);
+    console.log(`ligar para ${telefone2}`);
+  }
+
+  exibirTelefones(estudante.telefones[0], estudante.telefones[1])
+
+  exibirTelefones(...estudante.telefones);
+
+  const dadosEnvio = {
+    ...estudante.enderecos[0]
+  }
+
+  console.log(dadosEnvio);

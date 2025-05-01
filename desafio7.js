@@ -50,3 +50,40 @@ for (let chave in carro) {
     const texto = `A chave ${chave} tem o valor ${carro[chave]}`
     console.log(texto);
 }
+
+
+//Desafio 3: Utilize o objeto carro do exercício 2 com as propriedades iniciais (marca, modelo, ano, cor).
+const carro2 = {
+    marca: "Toyota",
+    modelo: "Corolla",
+    ano: 2022,
+    cor: "Prata",
+    ligado: false, //desligado
+    
+    ligar: function() {
+        if (this.ligado) {
+            console.log("O carro já está ligado.");
+        } else {
+            this.ligado = true;
+            console.log("O carro foi ligado.");
+        }
+    },
+
+    desligar: function() {
+        if (!this.ligado) {
+            console.log("O carro já está desligado.");
+        } else {
+            this.ligado = false;
+            console.log("O carro foi desligado.");
+        }
+    },
+
+    obterDetalhes: function() {
+        const estado = this.ligado ? "ligado" : "desligado";
+        return `Marca: ${this.marca}, Modelo: ${this.modelo}, Ano: ${this.ano}, Cor: ${this.cor}, Estado: ${estado}`;
+    }
+};
+
+console.log(carro2.obterDetalhes());
+carro2.ligar();
+console.log(carro2.obterDetalhes());

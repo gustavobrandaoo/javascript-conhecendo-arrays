@@ -25,3 +25,28 @@ const pessoa = {
 
 console.log("Média:", pessoa.calcularMediaNotas());
 console.log("Classificação:", pessoa.classificarDesempenho());
+
+
+//Desafio 2: Crie um objeto chamado carro que represente as informações de um veículo.
+
+const carro = {
+    marca: "Toyota",
+    modelo: "Corolla",
+    ano: 2022,
+    cor: "Prata"
+};
+
+for (let chave in carro) {
+    const texto = `A chave ${chave} tem o valor ${carro[chave]}`
+    console.log(texto);
+}
+
+// Adicionando novas propriedades por fora
+carro.combustivel = "Flex";
+carro.automatico = true;
+carro.quilometragem = 35000;
+
+for (let chave in carro) {
+    const texto = `A chave ${chave} tem o valor ${carro[chave]}`
+    console.log(texto);
+}

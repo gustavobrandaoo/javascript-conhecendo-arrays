@@ -9,7 +9,7 @@ const estudantes = require('./estudantes.json');
 //Por ter uma array e a informação ser encontrada:
 
 function buscaInformacao(lista, chave, valor) {
-    return lista.find((estudante) => estudante[chave].includes(valor));  
+    return lista.find((estudante) => estudante[chave].includes(valor));  // Usamos o find para encontrar algo dentro de uma lista.
 }
 
 
